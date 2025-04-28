@@ -8,4 +8,42 @@
     <string name="error_password"> Invalid password. Please retry.</string>
     <string name="password_input_field">Password input field</string>
     <string name="password_hint">Password</string>
+
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="dateOfBirth">Date Of Birth</string>
+    <string name="certificate">Certificate</string>
+    <string name="twoYr">Associate Degree</string>
+    <string name="txtcert">Certificate</string>
+    <string name="txtMajor">Major</string>
+    <string name="nextBtn">Next</string>
+
+    <string-array name="monthArray">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="certificateArray">
+        <item>Android Certificate</item>
+        <item>iOS Mobile Certificate</item>
+    </string-array>
+
+    <string-array name="lstMajor">
+        <item>Digital Media</item>
+        <item>Mobile Application Development</item>
+        <item>Web Development</item>
+    </string-array>
+
+
 </resources>

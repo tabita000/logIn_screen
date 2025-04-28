@@ -1,11 +1,11 @@
 package com.example.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         login(1),
         password(2),
         success(0)
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,23 +37,24 @@ class MainActivity : AppCompatActivity() {
                     txtPassword.requestFocus()
                 }
 
-                else ->
+                else -> {
                     Toast.makeText(applicationContext, "Success", Toast.LENGTH_LONG).show()
+                    val intent = Intent(this, MainClassList::class.java)
+                    startActivity(intent)
+                }
             }
         }
-
     }
 
-    fun  CheckLogin(txtLogin: String, txtPassword: String) : LoginSuccess {
+    fun CheckLogin(txtLogin: String, txtPassword: String): LoginSuccess {
         val holdLogin = "Tabita"
         val holdPass = "password"
 
         if (holdLogin != txtLogin) {
             return LoginSuccess.login
         }
-        return  if (holdPass != txtPassword) {
+        return if (holdPass != txtPassword) {
             return LoginSuccess.password
-
         } else LoginSuccess.success
     }
 }
